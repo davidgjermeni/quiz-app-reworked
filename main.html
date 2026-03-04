@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Quiz App</title>
+</head>
+<body>
+<div class="quiz-intro">
+    <div class="form">
+        <h1>Quiz App</h1>
+        <p>Welcome!</p>
+        <p>This is a multiple choice quiz test about random topics.</p>
+        <p>For every correct answer the score will be incremented by 25 points.</p>
+        <p>For every wrong answer or when the timer ends, the score will be decremented by 25 points.</p>
+        <button id="start">Start</button>
+    </div>
+</div>
+
+<div class="background-container">
+    <video class="bg-video" id="bgVideo" autoplay muted loop>
+        <source src="/background/dark-waves.webm" type="video/mp4"> 
+    </video>
+    <img class="bg-image" id="bgImage" src="/background/egypt.webp" alt="Background">
+</div>
+
+<div class="quiz-form remove" id="quiz-form">
+    <h1 id="timeleft">7</h1>
+    <div class="quiz" id="quiz" >
+        <h2 class="question" id="question">Question 1</h2>
+        <div class="answers" id="answers">
+            <button class="answersBtn" id="answersBtn">eadsrfsgersgeryg</button>
+            <button class="answersBtn" id="answersBtn">SDTGwsrgewryetrhetayhe</button>
+            <button class="answersBtn" id="answersBtn">answerygearyter</button>
+            <button class="answersBtn" id="answersBtn">answegrerer</button>
+    </div>
+        <button class="nextBtn" id="nextBtn"></button>
+    </div>
+</div>
+
+<div class="scoreSection">
+<p  id="score"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
